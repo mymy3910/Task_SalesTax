@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+		<title>20200808_消費税計算</title>
+	</head>
+	<body>
+    <div class="container">
+      <h3>消費税計算</h3>
+      <div class="contents price_area">
+      値段：<form name="form1" action=""><input class="price_box" name="price" type="text" value=""/></form> 円
+      </div>
+      <div class="contents select_area">
+        <select id="item_type" size="1">
+          <option value="food">食品</option>
+          <option value="other">食品以外</option>
+        </select>
+        <input class="btn" type="button" value="決定" onclick="ckickBtn()">  
+      </div>  
+      <div class="contents results_area">
+        結果：<span id="result"></span>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
